@@ -13,4 +13,7 @@ print("\nAverage Salary:",df['emp_salary'].mean())
 print("Maximum Salary:",df['emp_salary'].max())
 print("Minimum Salary:",df['emp_salary'].min())
 print(df.describe()) 
-print(df.groupby('department')['emp_salary'].mean())   
+print(df.groupby('department')['emp_salary'].mean()) 
+print("\nEmployees with salary greater than 60000:")
+high_salary_employees=df[df['emp_salary']>60000]  
+print(high_salary_employees)
