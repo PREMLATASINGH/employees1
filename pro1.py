@@ -10,3 +10,4 @@ data={
 df=pd.DataFrame(data)
 print(df)
 print("\nAverage Salary:",df['emp_salary'].mean())
+print("Maximum Salary:",df['emp_salary'].max())
