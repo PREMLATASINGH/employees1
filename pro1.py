@@ -30,3 +30,6 @@ print(high_salary_it_employees)
 print("\nEmployees with salary greater than 60000 or in IT department:")
 high_salary_or_it_employees=df[(df['emp_salary']>60000) | (df['department']=='IT')]
 print(high_salary_or_it_employees)
+print("\nEmployees with salary between 55000 and 65000:")
+salary_range_employees=df[(df['emp_salary']>=55000) & (df['emp_salary']<=65000)]
+print(salary_range_employees)
