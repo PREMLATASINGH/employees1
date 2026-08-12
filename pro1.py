@@ -42,3 +42,6 @@ df2=pd.DataFrame({
 df_combined=pd.concat([df,df2],ignore_index=True)
 print("\nCombined Employee Data:")
 print(df_combined)
+merged_df=pd.merge(df,df2,on='emp_id',how='outer',suffixes=('_left','_right'))
+print("\nMerged Employee Data:")
+print(merged_df)
