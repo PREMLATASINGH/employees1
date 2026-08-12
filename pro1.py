@@ -33,3 +33,12 @@ print(high_salary_or_it_employees)
 print("\nEmployees with salary between 55000 and 65000:")
 salary_range_employees=df[(df['emp_salary']>=55000) & (df['emp_salary']<=65000)]
 print(salary_range_employees)
+df2=pd.DataFrame({
+    'emp_id':[111,112,113],     
+    'emp_name':['Jack','Lily','Mia'],
+    'emp_salary':[60000,70000,65000],
+    'department':['HR','Finance','IT']
+})
+df_combined=pd.concat([df,df2],ignore_index=True)
+print("\nCombined Employee Data:")
+print(df_combined)
