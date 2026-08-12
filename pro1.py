@@ -23,3 +23,7 @@ print(it_department_employees)
 print("\nEmployees sorted by salary:")
 sorted_employees=df.sort_values(by='emp_salary',ascending=False)
 print(sorted_employees)
+print("\nEmployees with salary greater than 60000 in IT department:")
+high_salary_it_employees=df[(df['emp_salary']>60000) & (df
+['department']=='IT')]
+print(high_salary_it_employees)
