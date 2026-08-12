@@ -20,3 +20,6 @@ print(high_salary_employees)
 print("\nEmployees in IT department:")
 it_department_employees=df[df['department']=='IT']  
 print(it_department_employees)
+print("\nEmployees sorted by salary:")
+sorted_employees=df.sort_values(by='emp_salary',ascending=False)
+print(sorted_employees)
