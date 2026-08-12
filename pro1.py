@@ -17,3 +17,6 @@ print(df.groupby('department')['emp_salary'].mean())
 print("\nEmployees with salary greater than 60000:")
 high_salary_employees=df[df['emp_salary']>60000]  
 print(high_salary_employees)
+print("\nEmployees in IT department:")
+it_department_employees=df[df['department']=='IT']  
+print(it_department_employees)
