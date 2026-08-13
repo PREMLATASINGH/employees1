@@ -48,3 +48,6 @@ print(merged_df)
 print("\nEmployees with salary greater than 60000 after merging:")
 high_salary_employees_merged=merged_df[merged_df['emp_salary_left']>60000]
 print(high_salary_employees_merged)
+print("\nEmployees in IT department after merging:")
+it_department_employees_merged=merged_df[merged_df['department_left']=='IT']    
+print(it_department_employees_merged)
