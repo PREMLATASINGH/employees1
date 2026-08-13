@@ -45,3 +45,6 @@ print(df_combined)
 merged_df=pd.merge(df,df2,on='emp_id',how='outer',suffixes=('_left','_right'))
 print("\nMerged Employee Data:")
 print(merged_df)
+print("\nEmployees with salary greater than 60000 after merging:")
+high_salary_employees_merged=merged_df[merged_df['emp_salary_left']>60000]
+print(high_salary_employees_merged)
