@@ -51,3 +51,6 @@ print(high_salary_employees_merged)
 print("\nEmployees in IT department after merging:")
 it_department_employees_merged=merged_df[merged_df['department_left']=='IT']    
 print(it_department_employees_merged)
+print("\nEmployees sorted by salary after merging:")
+sorted_employees_merged=merged_df.sort_values(by='emp_salary_left',ascending=False) 
+print(sorted_employees_merged)
