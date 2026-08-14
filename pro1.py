@@ -64,3 +64,4 @@ print("\nEmployees with salary between 55000 and 65000 after merging:")
 salary_range_employees_merged=merged_df[(merged_df['emp_salary_left']>=55000) & (merged_df['emp_salary_left']<=65000)]
 print(salary_range_employees_merged)
 print("\nAverage Salary after merging:",merged_df['emp_salary_left'].mean())    
+print("Maximum Salary after merging:",merged_df['emp_salary_left'].max())
