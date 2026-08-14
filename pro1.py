@@ -71,3 +71,6 @@ print(merged_df.groupby('department_left')['emp_salary_left'].mean())
 print(df_combined.groupby('department')['emp_salary'].mean())
 print(df.isnull().sum())
 print(merged_df.isnull().sum())
+print("\nEmployees with missing salary information:")
+missing_salary_employees=merged_df[merged_df['emp_salary_left'].isnull()]
+print(missing_salary_employees)
