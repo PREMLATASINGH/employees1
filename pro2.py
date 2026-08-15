@@ -9,3 +9,4 @@ data={
 df=pd.DataFrame(data)
 print(df)
 print("\nAverage Age:",df['customer_age'].mean())
+print("Maximum Age:",df['customer_age'].max())
