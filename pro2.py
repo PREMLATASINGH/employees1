@@ -22,3 +22,6 @@ print(sorted_customers)
 print("\nCustomers with age between 25 and 30:")
 age_range_customers=df[(df['customer_age']>=25) & (df['customer_age']<=30)]
 print(age_range_customers)
+print("\nCustomers with email ending with 'example.com':")
+example_email_customers=df[df['customer_email'].str.endswith('example.com')]    
+print(example_email_customers)
