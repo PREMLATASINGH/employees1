@@ -13,3 +13,6 @@ print("Maximum Age:",df['customer_age'].max())
 print("Minimum Age:",df['customer_age'].min())
 print(df.describe())
 print(df.groupby('customer_age')['customer_name'].count())
+print("\nCustomers older than 30:")
+older_customers=df[df['customer_age']>30]
+print(older_customers)
