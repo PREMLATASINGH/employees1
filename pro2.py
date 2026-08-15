@@ -16,3 +16,6 @@ print(df.groupby('customer_age')['customer_name'].count())
 print("\nCustomers older than 30:")
 older_customers=df[df['customer_age']>30]
 print(older_customers)
+print("\nCustomers sorted by age:")
+sorted_customers=df.sort_values(by='customer_age',ascending=False)  
+print(sorted_customers)
