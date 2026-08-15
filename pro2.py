@@ -19,3 +19,6 @@ print(older_customers)
 print("\nCustomers sorted by age:")
 sorted_customers=df.sort_values(by='customer_age',ascending=False)  
 print(sorted_customers)
+print("\nCustomers with age between 25 and 30:")
+age_range_customers=df[(df['customer_age']>=25) & (df['customer_age']<=30)]
+print(age_range_customers)
