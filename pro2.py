@@ -28,3 +28,6 @@ print(example_email_customers)
 print("\nCustomers with name starting with 'A':")
 name_starting_A_customers=df[df['customer_name'].str.startswith('A')]
 print(name_starting_A_customers)
+print("\nCustomers with name containing 'a':")
+name_containing_a_customers=df[df['customer_name'].str.contains('a',case=False)]
+print(name_containing_a_customers)
