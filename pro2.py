@@ -25,3 +25,6 @@ print(age_range_customers)
 print("\nCustomers with email ending with 'example.com':")
 example_email_customers=df[df['customer_email'].str.endswith('example.com')]    
 print(example_email_customers)
+print("\nCustomers with name starting with 'A':")
+name_starting_A_customers=df[df['customer_name'].str.startswith('A')]
+print(name_starting_A_customers)
