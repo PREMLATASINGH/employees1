@@ -31,3 +31,6 @@ print(name_starting_A_customers)
 print("\nCustomers with name containing 'a':")
 name_containing_a_customers=df[df['customer_name'].str.contains('a',case=False)]
 print(name_containing_a_customers)
+print("\nCustomers with age greater than average age:")
+average_age=df['customer_age'].mean()
+print("Average Age:",average_age)
