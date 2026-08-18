@@ -46,3 +46,6 @@ print(df[df['customer_age']>=average_age])
 print([df['customer_email']])
 print(df['customer_email'].isnull().sum())
 print(df['customer_age'].sum())
+print("\nCustomers with age greater than 30 and name starting with 'D':")
+d_customers=df[(df['customer_age']>30) & (df['customer_name'].str.startswith('D'))]
+print(d_customers)
