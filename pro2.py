@@ -54,4 +54,4 @@ e_customers=df[(df['customer_age']<30) | (df['customer_name'].str.startswith('E'
 print(e_customers)
 print("\nCustomers with age between 25 and 35 and name containing 'a':")
 a_customers=df[(df['customer_age']>=25) & (df['customer_age']<=35) & (df['customer_name'].str.contains('a',case=False))]
-print(a_customers)  
+print(a_customers)
