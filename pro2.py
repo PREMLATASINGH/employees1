@@ -55,3 +55,6 @@ print(e_customers)
 print("\nCustomers with age between 25 and 35 and name containing 'a':")
 a_customers=df[(df['customer_age']>=25) & (df['customer_age']<=35) & (df['customer_name'].str.contains('a',case=False))]
 print(a_customers)
+print("\nCustomers with age not between 25 and 35 or name not containing 'a':")
+not_a_customers=df[~((df['customer_age']>=25) & (df['customer_age']<=35) & (df['customer_name'].str.contains('a',case=False)))]
+print(not_a_customers)
