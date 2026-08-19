@@ -60,4 +60,7 @@ not_a_customers=df[~((df['customer_age']>=25) & (df['customer_age']<=35) & (df['
 print(not_a_customers)
 print(df[df['customer_name'].str.len()>4])
 print(df)
+print("\nCustomers with age greater than 30 and name starting with 'D':")
+d_customers=df[(df['customer_age']>30) & (df['customer_name'].str.startswith('D'))]
+print(d_customers)
 
