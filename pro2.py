@@ -68,5 +68,6 @@ a_customers=df[(df['customer_age']>30) & (df['customer_name'].str.startswith('A'
 print(a_customers)
 print("\nCustomers with age greater than 30 and name starting with 'C':")
 c_customers=df[(df['customer_age']>30) & (df['customer_name'].str.startswith('C'))]
-print(c_customers)  
+print(c_customers) 
+print(df[df['customer_name'].str.startswith('A') & (df['customer_age']>30)]) 
 
