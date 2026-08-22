@@ -20,3 +20,4 @@ data={
 }
 df=pd.DataFrame(data)
 print(df)
+print("\nAverage Order Amount:",df['order_amount'].mean())
