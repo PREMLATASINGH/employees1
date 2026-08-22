@@ -21,3 +21,4 @@ data={
 df=pd.DataFrame(data)
 print(df)
 print("\nAverage Order Amount:",df['order_amount'].mean())
+print("Maximum Order Amount:",df['order_amount'].max())
