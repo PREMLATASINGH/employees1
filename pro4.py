@@ -17,3 +17,5 @@ data = {
 }
 df = pd.DataFrame(data)
 print(df)
+print(df.head())
+print(df.describe())
